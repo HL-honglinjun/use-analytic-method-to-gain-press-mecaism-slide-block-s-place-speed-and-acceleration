@@ -346,7 +346,7 @@ class analpressmecaism(Frame):  # 定义显示窗口界面的类
         self.label_wait.pack()
         self.calculate(l1, l2, l3, lcd, l4, x1, x2, y, n1, angel)'''
 
-    def calculate_x(self, l1, l2, l3, lcd, l4, x1, x2, y, n1, angel):  # 计算，先占个位
+    def calculate_x(self, l1, l2, l3, lcd, l4, x1, x2, y, n1, angel):  # 计算位置
         self.window_destroy()
         self.label_rade_x = Label(self, text="正在努力计算位置呀QAQ")
         self.label_rade_x.pack()
@@ -402,7 +402,7 @@ class analpressmecaism(Frame):  # 定义显示窗口界面的类
         print(type(th1store))
         self.calculate_v(th1store, th2store, th3store, th4store, s5store, l1, l2, l3, lcd, l4, n1, angel)
 
-    def calculate_v(self, th1store, th2store, th3store, th4store, s5store, l1, l2, l3, lcd, l4, n1, angel):
+    def calculate_v(self, th1store, th2store, th3store, th4store, s5store, l1, l2, l3, lcd, l4, n1, angel):#计算速度
         self.window_destroy()
         self.label_rade_v = Label(self, text="正在努力计算速度呀QAQ")
         self.label_rade_v.pack()
@@ -447,7 +447,7 @@ class analpressmecaism(Frame):  # 定义显示窗口界面的类
 
     def calculate_a(self, w1, w2store, w3store, w4store, v5store, th1store, th2store, th3store, th4store, s5store, l1,
                     l2, l3,
-                    lcd, l4, angel):
+                    lcd, l4, angel):#计算加速度，传参数为了保证画图
         self.window_destroy()
         self.label_rade_a = Label(self, text="正在努力计算加速度呀QAQ")
         self.label_rade_a.pack()
