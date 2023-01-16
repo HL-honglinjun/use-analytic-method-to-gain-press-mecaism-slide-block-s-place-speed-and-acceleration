@@ -536,8 +536,10 @@ class analpressmecaism(Frame):  # 定义显示窗口界面的类
         plt.savefig(f'./{store_time}滑块位置，速度与加速度分析折线图,隔{angel}°取一个点.png')
         self.label_memory_pictures = Label(self, text="图像已自动保存")
         self.label_memory_pictures.pack()
-        self.button_resume = Button(self, text="重新开始", command=self.store_place_judge)
-        self.button_resume.pack()
+        self.button_rstore_data = Button(self, text="重新开始记录数据", command=self.to_store_data)  # 直接用现有数据计算
+        self.button_rstore_data.pack()
+        self.button_rto_memory_data = Button(self, text="再次为我展示历史数据，我要计算历史数据", command=self.show_memory_data)  # 可以调用历史数据
+        self.button_rto_memory_data.pack()
         self.button_quit = Button(self, text="结束", command=self.quit)
         self.button_quit.pack()
 
