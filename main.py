@@ -486,9 +486,9 @@ class Main(Frame):  # 定义显示窗口界面的类
             a2store.append(float(solve_value[a2]))
             a3store.append(float(solve_value[a3]))
             a4store.append(float(solve_value[a4]))
-        self.pic(th1store, v5store, s5store, a5store)
+        self.pic(th1store, v5store, s5store, a5store, angel)
 
-    def pic(self, th1store, v5store, s5store, a5store):
+    def pic(self, th1store, v5store, s5store, a5store, angel):
         self.window_destroy()
         self.label_success = Label(self, text="生成图像如下")
         self.label_success.pack()
@@ -533,9 +533,11 @@ class Main(Frame):  # 定义显示窗口界面的类
                                        self)  # matplotlib 2.2版本之后推荐使用NavigationToolbar2Tk，若使用NavigationToolbar2TkAgg会警告
         toolbar.update()
         self.canvas._tkcanvas.pack(side=TOP, fill=BOTH, expand=1)
-        plt.savefig(f'./{store_time}滑块位置，速度与加速度分析折线图.png')
+        plt.savefig(f'./{store_time}滑块位置，速度与加速度分析折线图,隔{angel}°取一个点.png')
         self.label_memory_pictures = Label(self, text="图像已自动保存")
         self.label_memory_pictures.pack()
+        self.button_resume = Button(self, text="重新开始", command=self.store_place_judge)
+        self.button_resume.pack()
         self.button_quit = Button(self, text="结束", command=self.quit)
         self.button_quit.pack()
 
