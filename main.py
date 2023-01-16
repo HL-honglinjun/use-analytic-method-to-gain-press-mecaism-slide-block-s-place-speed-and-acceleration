@@ -30,7 +30,7 @@ from matplotlib.pyplot import MultipleLocator
 # ----------------------------------------------------------------------------------------------------------------------
 
 
-class Main(Frame):  # 定义显示窗口界面的类
+class analpressmecaism(Frame):  # 定义显示窗口界面的类
 
     def __init__(self, master=None):
         super().__init__(master)
@@ -546,7 +546,7 @@ if __name__ == "__main__":
     root = Tk()
     root.title('解析法机构分析程序')
     root.minsize(600, 600)
-    main = Main(root)
+    main = analpressmecaism(root)
     sw = root.winfo_screenwidth()
     sh = root.winfo_screenheight()
     ww = 610
