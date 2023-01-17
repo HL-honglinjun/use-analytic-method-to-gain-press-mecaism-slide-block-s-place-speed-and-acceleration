@@ -5,6 +5,7 @@
 # 打包用我（pyinstaller -F -w main.py --hidden-import=['openpyxl']）
 import os
 import time
+import sys
 # ----------------------------------------------------------------------------------------------------------------------
 from tkinter import *
 from tkinter import ttk
@@ -557,3 +558,4 @@ if __name__ == "__main__":
     y = (sh - wh) / 2
     root.geometry('%dx%d+%d+%d' % (ww, wh, x, y))
     root.mainloop()
+    sys.exit(0)
