@@ -9,25 +9,17 @@ import sys
 # ----------------------------------------------------------------------------------------------------------------------
 from tkinter import *
 from tkinter import ttk
-import tkinter as TK
 # ----------------------------------------------------------------------------------------------------------------------
 import openpyxl
 # ----------------------------------------------------------------------------------------------------------------------
-import math
 import numpy as np
 import pandas as pd
 from sympy import *
 from sympy import S, symbols, nonlinsolve, Rational, I
 # ----------------------------------------------------------------------------------------------------------------------
-import matplotlib
-from matplotlib.figure import Figure
 from matplotlib.font_manager import FontProperties
 import matplotlib.pyplot as plt
-from matplotlib.pylab import mpl
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
-from matplotlib.pyplot import MultipleLocator
-
-
 # ----------------------------------------------------------------------------------------------------------------------
 
 
